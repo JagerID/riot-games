@@ -1,0 +1,54 @@
+@import '../assets/_variables'
+
+header
+  background-color: $color-dark
+
+  *
+    text-transform: uppercase
+    color: $color-light
+    font-size: 14px
+
+  .header-inner
+    height: 90px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .logo
+      display: flex
+      gap: 60px
+      position: relative
+      max-width: max-content
+      &::after
+        content: ''
+        display: block
+        width: 2px
+        height: 100%
+        background-color: $color-light
+        position: absolute
+        left: calc(50% + 12px)
+        top: 0
+      img
+        cursor: pointer
+
+    nav
+      ul
+        display: flex
+        gap: 30px
+        align-items: center
+        li
+          cursor: pointer
+          &:hover
+            color: $color-red
+
+    .profile
+      display: flex
+      align-items: center
+      gap: 16px
+      img
+        width: 42px
+        height: 42px
+        border-radius: 50%
+        cursor: pointer
+      span
+        cursor: pointer
