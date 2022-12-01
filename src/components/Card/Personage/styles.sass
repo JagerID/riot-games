@@ -1,0 +1,45 @@
+@import '../../../assets/_variables'
+
+article.personage-card
+  min-height: 990px
+  max-width: 440px
+  width: 100%
+  background-color: $color-dark
+  position: relative
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    border: 10px solid transparent
+    border-top: 10px solid $color-red
+    border-left: 10px solid $color-red
+  .personage-info
+    transform: rotate(90deg)
+    position: absolute
+    width: 100%
+    top: 210px
+    left: -47%
+    .birth-country
+      color: $color-red
+      font-size: 24px
+      margin-left: 3px
+    .personage-name
+      text-transform: uppercase
+      font-size: 72px
+
+  .abilities
+    position: absolute
+    bottom: -31px
+    right: -31px
+    display: flex
+    justify-content: space-around
+    max-width: inherit
+    width: 100%
+    min-height: 110px
+    border: 2px solid $color-light
+    background-color: $color-dark
+    img
+      cursor: pointer
+      &:hover
+        transform: translateY(-10px)
