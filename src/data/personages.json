@@ -42,7 +42,8 @@
         "/images/personages/sage/abilities/2.svg",
         "/images/personages/sage/abilities/3.svg",
         "/images/personages/sage/abilities/4.svg"
-      ]
+      ],
+      "light": true
     }
   ]
 }

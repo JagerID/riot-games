@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import "./styles.sass";
 
 interface Personage {
@@ -5,6 +6,7 @@ interface Personage {
   birthCountry: string;
   abilities: Array<string>;
   photo: string;
+  light?: boolean;
 }
 
 type Props = {
@@ -12,29 +14,30 @@ type Props = {
   light?: boolean;
 };
 
-const PersonageCard = ({ personage, light }: Props) => {
-  const style = {
-    background: `url(${personage.photo}) center / cover no-repeat, #1F2326`,
+const PersonageCard = ({ personage }: Props) => {
+  const cardStyle = {
+    background: `url(${personage.photo}) center / cover no-repeat, ${
+      personage.light ? "#F8F8F8" : "#1F2326"
+    }`,
   };
   return (
-    <article className="personage-card" style={style}>
+    <article className="personage-card" style={cardStyle}>
       <div className="personage-info">
         <span className="birth-country">{personage.birthCountry}</span>
-        <h2 className="personage-name">{personage.name}</h2>
+        <h2
+          className={classNames("personage-name", {
+            light: personage.light,
+          })}
+        >
+          {personage.name}
+        </h2>
       </div>
-      <div className="abilities">
+      <div
+        className="abilities"
+        style={{ background: `${personage.light && "#F8F8F8"}` }}
+      >
         {personage.abilities?.map((abilitie) => (
-          <img
-            src={abilitie}
-            alt=""
-            // style={
-            //   light
-            //     ? {
-            //         filter: "invert(100%)",
-            //       }
-            //     : {}
-            // }
-          />
+          <img src={abilitie} alt="" />
         ))}
       </div>
     </article>
