@@ -1,0 +1,49 @@
+{
+  "personages": [
+    {
+      "name": "Phoenix",
+      "birthCountry": "United Kingdom",
+      "photo": "/images/personages/phoenix/phoenix.png",
+      "abilities": [
+        "/images/personages/phoenix/abilities/1.svg",
+        "/images/personages/phoenix/abilities/2.svg",
+        "/images/personages/phoenix/abilities/3.svg",
+        "/images/personages/phoenix/abilities/4.svg"
+      ]
+    },
+    {
+      "name": "Jett",
+      "birthCountry": "South Korea",
+      "photo": "/images/personages/jett/jett.png",
+      "abilities": [
+        "/images/personages/jett/abilities/1.svg",
+        "/images/personages/jett/abilities/2.svg",
+        "/images/personages/jett/abilities/3.svg",
+        "/images/personages/jett/abilities/4.svg"
+      ]
+    },
+    {
+      "name": "Sova",
+      "birthCountry": "Russia",
+      "photo": "/images/personages/sova/sova.png",
+      "abilities": [
+        "/images/personages/sova/abilities/1.svg",
+        "/images/personages/sova/abilities/2.svg",
+        "/images/personages/sova/abilities/3.svg",
+        "/images/personages/sova/abilities/4.svg"
+      ]
+    },
+    {
+      "name": "Sage",
+      "birthCountry": "China",
+      "photo": "/images/personages/sage/sage.png",
+      "abilities": [
+        "/images/personages/sage/abilities/1.svg",
+        "/images/personages/sage/abilities/2.svg",
+        "/images/personages/sage/abilities/3.svg",
+        "/images/personages/sage/abilities/4.svg"
+      ],
+      "light": true
+    }
+  ]
+}

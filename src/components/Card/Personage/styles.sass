@@ -1,0 +1,56 @@
+@import '../../../assets/_variables'
+
+article.personage-card
+  min-height: 990px
+  max-width: 440px
+  width: 100%
+  background-color: $color-dark
+  position: relative
+  z-index: 3
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    border: 10px solid transparent
+    border-top: 10px solid $color-red
+    border-left: 10px solid $color-red
+  *
+    font-family: "Druk Wide"
+    letter-spacing: .1em
+
+  .personage-info
+    transform: rotate(90deg)
+    position: absolute
+    width: 800px
+    top: 40%
+    left: -380px
+    display: flex
+    flex-direction: column
+    .birth-country
+      color: $color-red
+      font-size: 24px
+      margin-left: 3px
+    .personage-name
+      text-transform: uppercase
+      font-size: 72px
+      color: transparent
+      -webkit-text-stroke: 2px $color-light
+      &.light
+        -webkit-text-stroke: 2px $color-dark
+
+  .abilities
+    position: absolute
+    bottom: -31px
+    right: -31px
+    display: flex
+    justify-content: space-around
+    max-width: inherit
+    width: 100%
+    min-height: 110px
+    border: 2px solid $color-light
+    background-color: $color-dark
+    img
+      cursor: pointer
+      &:hover
+        transform: translateY(-10px)
